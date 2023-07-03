@@ -1,11 +1,14 @@
 package Classes;
 
 import Interfaces.iActorBehaviuor;
+import Interfaces.iReturnOrder;
 
-public abstract class Actor implements iActorBehaviuor {
+public abstract class Actor implements iActorBehaviuor, iReturnOrder {
     protected String name;
     protected boolean isTakeOrder;
     protected boolean isMakeOrder;
+    protected int idOrder;
+    public boolean resultConfirmation;
 
     public Actor(String name) {
         this.name = name;
@@ -14,18 +17,18 @@ public abstract class Actor implements iActorBehaviuor {
     abstract public String getName();
 
     // public boolean isTakeOrder() {
-    //     return isTakeOrder;
+    // return isTakeOrder;
     // }
 
     // public boolean isMakeOrder() {
-    //     return isMakeOrder;
+    // return isMakeOrder;
     // }
 
     // public void setTakeOrder(boolean takeOrder) {
-    //     isTakeOrder = takeOrder;
+    // isTakeOrder = takeOrder;
     // }
 
     // public void setMakeOrder(boolean makeOrder) {
-    //     isMakeOrder = makeOrder;
+    // isMakeOrder = makeOrder;
     // }
 }

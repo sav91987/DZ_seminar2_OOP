@@ -1,43 +1,47 @@
 package Classes;
 
-public class SpecialClient extends Actor{
-    private int idVip;
-    public SpecialClient(String name, Integer id) {
-        super(name);
-        idVip = id;
-    }
+public class SpecialClient extends Actor {
+  private int idVip;
 
-    @Override
-    public String getName() {
-        return super.name;
-    }
+  public SpecialClient(String name, Integer id) {
+    super(name);
+    idVip = id;
+  }
 
-    public boolean isTakeOrder() {
-      return super.isTakeOrder;
-    }
+  @Override
+  public String getName() {
+    return super.name;
+  }
 
-    public boolean isMakeOrder() {
-      return super.isMakeOrder;
-    }
+  public boolean isTakeOrder() {
+    return super.isTakeOrder;
+  }
 
-    public void setTakeOrder(boolean makeOder) {
-      super.isMakeOrder = makeOder;
-    }
-    
-    public void setMakeOrder(boolean pikUpOrder) {
-      super.isTakeOrder = pikUpOrder;
-    }
+  public boolean isMakeOrder() {
+    return super.isMakeOrder;
+  }
 
-    public Actor getActor() {
-      return this;
-    }
+  public void setTakeOrder(boolean makeOder) {
+    super.isMakeOrder = makeOder;
+  }
 
-    // @Override
-    // public String getName() {
-    //     return name;
-    // }
+  public void setMakeOrder(boolean pikUpOrder) {
+    super.isTakeOrder = pikUpOrder;
+  }
 
-    // public int getIdVip() {
-    //     return idVip;
-    // }
+  public Actor getActor() {
+    return this;
+  }
+
+  public void getIdOrder(int idOrder) {
+    super.idOrder = idOrder;
+  }
+
+  public boolean returnConfirmation(boolean confirmation) {
+    super.resultConfirmation = confirmation;
+    return false;
+  }
+
+  public void returnMoney() {
+  }
 }

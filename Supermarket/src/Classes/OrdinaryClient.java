@@ -1,56 +1,47 @@
 package Classes;
 
 public class OrdinaryClient extends Actor {
-    // private boolean setTakeOrder;
-    // private boolean setMakeOrder;
+  // private boolean setTakeOrder;
+  // private boolean setMakeOrder;
 
-    public OrdinaryClient(String name) {
-        super(name);
-    }
+  public OrdinaryClient(String name) {
+    super(name);
+  }
 
-    @Override
-    public String getName() {
-        return super.name;
-    }
+  @Override
+  public String getName() {
+    return super.name;
+  }
 
-    public boolean isTakeOrder() {
-      return super.isTakeOrder;
-    }
+  public boolean isTakeOrder() {
+    return super.isTakeOrder;
+  }
 
-    public boolean isMakeOrder() {
-      return super.isMakeOrder;
-    }
+  public boolean isMakeOrder() {
+    return super.isMakeOrder;
+  }
 
-    public void setTakeOrder(boolean makeOder) {
-      super.isMakeOrder = makeOder;
-    }
-    
-    public void setMakeOrder(boolean pikUpOrder) {
-      super.isTakeOrder = pikUpOrder;
-    }
+  public void setTakeOrder(boolean makeOder) {
+    super.isMakeOrder = makeOder;
+  }
 
-    public Actor getActor() {
-      return this;
-    }
+  public void setMakeOrder(boolean pikUpOrder) {
+    super.isTakeOrder = pikUpOrder;
+  }
 
-    // public boolean isSetTakeOrder() {
-    //     return setTakeOrder;
-    // }
+  public Actor getActor() {
+    return this;
+  }
 
-    // public void setSetTakeOrder(boolean setTakeOrder) {
-    //     this.setTakeOrder = setTakeOrder;
-    // }
+  public void getIdOrder(int idOrder) {
+    super.idOrder = idOrder;
+  }
 
-    // public boolean isSetMakeOrder() {
-    //     return setMakeOrder;
-    // }
+  public boolean returnConfirmation(boolean confirmation) {
+    super.resultConfirmation = confirmation;
+    return false;
+  }
 
-    // public void setSetMakeOrder(boolean setMakeOrder) {
-    //     this.setMakeOrder = setMakeOrder;
-    // }
-
-    // @Override
-    // public String getName() {
-    //     return name;
-    // }
+  public void returnMoney() {
+  }
 }
