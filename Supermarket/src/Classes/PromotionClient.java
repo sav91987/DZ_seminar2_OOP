@@ -1,9 +1,9 @@
 package Classes;
 
-    /**
-     * Класс клиента с акцией, наследуемый от Actor
-     * 
-     */
+/**
+ * Класс клиента с акцией, наследуемый от Actor
+ * 
+ */
 public class PromotionClient extends Actor {
 
     private int idProm;
@@ -11,9 +11,9 @@ public class PromotionClient extends Actor {
     static int numOfPromMembers = 10;
 
     /**
-     * @param name - имя клиента с акцией
-     * @param idProm - id клиента с акцией
-     * @param nameProm - название акции
+     * @param name             - имя клиента с акцией
+     * @param idProm           - id клиента с акцией
+     * @param nameProm         - название акции
      * @param numOfPromMembers - масимальное число участников
      */
     public PromotionClient(String name, int idProm, String nameProm, int numOfPromMembers) {
